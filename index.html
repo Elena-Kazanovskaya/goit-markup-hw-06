@@ -376,7 +376,16 @@
       </div>
       <div>
         <p>Підпишіться на розсилку</p>
-        <form action=""></form>
+        <form >
+          <label for="">
+            <input type="text">
+          </label>
+          <button>Підписатися
+            <svg>
+              <use></use>
+            </svg>
+          </button>
+        </form>
       </div>    
     </div>      
   </footer>
@@ -387,6 +396,38 @@
                 <use href="./images/symbol-defs (1).svg#icon-close-black-18dp-2-1"></use>
               </svg>
       </button>
+      <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="form" >
+        <div class="form-field">
+          <label for="name" class="form-lable">Ім'я</label>
+          <input type="text" class="form-input" name="name" id="name">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/icons2.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <label for="mail" class="form-lable">Пошта</label>
+          <input type="email" class="form-input" name="mail" id="mail">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/icons2.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </div>
+        <div class="form-field">
+          <label for="phone" class="form-lable">Телефон</label>
+          <input type="phone" class="form-input" name="phone" id="phone">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/icons2.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </div>
+        
+        <label for="comment" class="form-lable">Коментар</label>
+        <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+        <input type="checkbox" name="policy" id="policy" >
+        <label for="policy" class="policy-label" >Погоджуюся з розсилкою та приймаю 
+          <a href="">Умови договору</a>
+        </label>
+        <button type="submit" class="form-button button ">Відправити</button>
+      </form>
 
     </div>
   </div>
