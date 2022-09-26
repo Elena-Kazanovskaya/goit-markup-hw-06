@@ -344,7 +344,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: var(--primary-white-color);
     background: rgba(47, 48, 58, 0.8);
 }
 
@@ -712,6 +712,14 @@ a:focus .text-overlay {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+.modal-close-icon {
+    transition: fill var(--transition-duration-function);
+}
+
+.modal-close-icon:focus,
+.modal-close-icon:hover {
+    fill: var(--accent-color);
+} 
 .form {
     display: flex;
     flex-direction: column;
@@ -746,6 +754,8 @@ a:focus .text-overlay {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 
+    transition: border var(--transition-duration-function);
+
 }
 .modal-title {
     margin-bottom: 12px;
@@ -758,12 +768,15 @@ a:focus .text-overlay {
     letter-spacing: 0.03em;
     color: #212121;
 }
+
 .form-icon {
     position: absolute;
     top: 45%;
     left: 12px;
     margin-top: 11px;
     transform: translateY(-45%);
+
+    transition: fill var(--transition-duration-function);
     
 }
 .form-input:focus {
@@ -787,6 +800,8 @@ a:focus .text-overlay {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+
+    transition: border var(--transition-duration-function);
 }
 .comment:focus {
     outline: none;
@@ -805,7 +820,7 @@ a:focus .text-overlay {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 13px;
+    /* margin-left: 13px; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -841,6 +856,7 @@ a:focus .text-overlay {
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    transition: border var(--transition-duration-function);
 }
 .mailing-input:focus {
     outline: none;
