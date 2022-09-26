@@ -719,7 +719,7 @@ a:focus .text-overlay {
 .form-field {
     position: relative;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -804,6 +804,8 @@ a:focus .text-overlay {
 .policy-label {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-left: 13px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -845,30 +847,38 @@ a:focus .text-overlay {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 }
-.checkbox-container {
+/* .checkbox-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 7px;
     /* fill: transparent; */
-    cursor: pointer;
+    /* cursor: pointer;
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 3px;
-        
+         */
        
-}
+ 
 
 .checkbox-input {
     appearance: none;
     position: absolute;
 }
+.checkbox-icon-on {
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+
+}
 .checkbox-icon-own-on {
     display: none;
 }
 .checkbox-input:checked + .checkbox-icon-on {
-    fill: #188ce8;
+    background-color : #188ce8;
 }
 .checkbox-input:checked + .checkbox-icon-on .checkbox-icon-own-on {
     display: block;
