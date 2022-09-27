@@ -790,10 +790,12 @@ a:focus .text-overlay {
     border: 1px solid var(--accent-color);
 }
 
-.form-field:focus-within > .form-icon {
+/* .form-field:focus-within > .form-icon {
+    fill: var(--accent-color);
+} */
+.form-input:focus ~ .form-icon {
     fill: var(--accent-color);
 }
-
 .comment {
     width: 100%;
     height: 120px;
